@@ -1,9 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "core",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "custom": {
+    "cardinal-components": [
+      "core:magik"
+    ]
+  },
+
+  "name": "CafeCraft Core",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Me!"
@@ -14,16 +20,22 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/core/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.cafecraft.core.CafeCraft_Core"
+    ],
+    "cardinal-components-entity": [
+        "com.cafecraft.core.MyComponents"
+    ],
+    "cardinal-components-world": [
+        "com.cafecraft.core.MyComponents"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cafecraft-core.mixins.json"
   ],
 
   "depends": {
