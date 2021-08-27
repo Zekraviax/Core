@@ -4,7 +4,8 @@
   "package": "com.cafecraft.core.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "DebugHudMixin"
+    "DebugHudMixin",
+    "TestMixin"
   ],
   "client": [
   ],

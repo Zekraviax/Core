@@ -5,7 +5,8 @@
 
   "custom": {
     "cardinal-components": [
-      "core:magik"
+      "core:magik",
+      "core:day"
     ]
   },
 
@@ -28,10 +29,10 @@
       "com.cafecraft.core.CafeCraft_Core"
     ],
     "cardinal-components-entity": [
-        "com.cafecraft.core.MyComponents"
+        "com.cafecraft.core.cca.MyComponents"
     ],
     "cardinal-components-world": [
-        "com.cafecraft.core.MyComponents"
+        "com.cafecraft.core.cca.MyComponents"
     ]
   },
   "mixins": [

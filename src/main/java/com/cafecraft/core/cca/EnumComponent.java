@@ -5,13 +5,35 @@ import net.minecraft.nbt.NbtCompound;
 
 public interface EnumComponent extends ComponentV3 {
     int getValue();
+    String valueToString();
 }
 
 class DayEnumComponent implements EnumComponent {
-    int value;
+    int value = 0;
 
     public int getValue() {
         return value;
+    }
+
+    public String valueToString() {
+        String returnString = "null";
+
+        switch (value) {
+            case 0: {
+                returnString = "Monday";
+                break;
+            }
+            case 1: {
+                returnString = "Tuesday";
+                break;
+            }
+            default: {
+                returnString = "error";
+                break;
+            }
+        }
+
+        return returnString;
     }
 
     @Override
